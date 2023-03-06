@@ -1,0 +1,13 @@
+{
+  "name": "base",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "browser": "./index.browser.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "form-data": "^3.0.0",
+    "uuid": "^7.0.3"
+  }
+}

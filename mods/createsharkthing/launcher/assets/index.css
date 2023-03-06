@@ -1,0 +1,105 @@
+
+
+.pulsate-fwd{-webkit-animation:pulsate-fwd 2s ease-in-out infinite both;animation:pulsate-fwd 2s ease-in-out infinite both}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal infinite 0.9s both;
+	        animation: jello-horizontal infinite 0.9s both;
+}
+
+
+
+
+.scale-out-center{-webkit-animation:scale-out-center .5s cubic-bezier(.55,.085,.68,.53) both;animation:scale-out-center .5s cubic-bezier(.55,.085,.68,.53) both}
+
+.loaderUI{
+
+  z-index: 2;
+
+}
+
+
+
+.child {
+  z-index: 2;
+    height: 45%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+  .center {
+    text-align: center;
+    align-items: center;
+
+
+
+  }
+.exit{
+  height: 50px;
+  position: absolute;
+        top: 30px;
+        right: 30px;
+}
+
+  #backgroundButton{
+    position: absolute;
+    top: 85%;
+    
+  }
+.cover{
+  z-index: 1;
+  pointer-events: none;
+  background-color: #0d0d0d;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+
+
+}
+
+.round{
+  border-radius: 25px;
+}
+
+.taskButton{
+  background-color: rgba(88, 88, 88, 0.973)
+}
+
+html, body {
+  margin: 0px;
+  background-color: rgb(13, 13, 13);  
+  -text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+.autobus{
+  font-family: autobus;
+  font-size: 2em;
+}
+
+#text{
+  z-index: 2;
+}
+
+.text{
+  -webkit-text-fill-color: white;
+  margin-top: 92%;
+
+}
+
+
+@-webkit-keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}@keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+@font-face {
+  font-family: 'autobus';
+  font-weight: 300;
+  src: url("./autobus.ttf");
+}
+

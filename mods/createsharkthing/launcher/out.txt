@@ -1,0 +1,3 @@
+  <log4j:Event logger="ank" timestamp="1677876744772" level="INFO" thread="main">
+    <log4j:Message><![CDATA[Building optimized datafixer]]></log4j:Message>
+  </log4j:Event>
