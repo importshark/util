@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Specification-Title: gametutorial
+Specification-Version: 1
+Implementation-Title: gametutorial
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Timestamp: 2023-03-07T20:44:57-0500
+

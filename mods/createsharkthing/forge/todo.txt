@@ -1,0 +1,21 @@
+set up dropbox and log open system https://www.dropbox.com/request/rTJNw8FX5irpmcKTjgTJ error report
+auth handle refresh tokens
+gmll requires try catch in .endswith(get.js) remember that if update happens
+create minecraft process watcher
+loaders for confirm acc added but need backgrounds removed.
+implement warning if check account fails?
+if the auth is not ready when prep mc is called it sends a fail message. Make that be the ready event but prob log?
+possible dev level problem at line 728 id alpha
+another dev error at 722 id beta
+state confirm fail what do we want to do? I think try offline or report error
+timeouts and redundancies on everything!
+error page finish
+loading avatar gif
+[MCLO NORM HOPE] not finished yet YEET also
+credits?
+check auth date and auth expire scene?
+correct flow of prep -> ready -> launching -> launched -> hide -> end-reopen in state finish idk
+updates on download progresss
+check the auth is valid
+memory get fail retry doesnt work
+do we want one long running thread?

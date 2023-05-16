@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Shark Panel</title>
+</head>
+<body>
+<div id="taskButton" class="round center taskButton ">
+<p id="taskText" class="autobus text">No tasks running.</p>
+</div>
+<img alt="Shark Image" id="shark" src="./shark&circle.png" class="child pulsate-fwd">
+<link rel="stylesheet" href="./index.css">
+<div id="textholder" class="center"></div>
+<button id="backgroundButton" class="center" type="button">Run in background</button>
+<img id="exitButton" class="exit" alt="exit" src="./exit.png">
+<p id="statustext" class="text center autobus">Setting things up...</p>
+<div id="info1" class="notification">
+<p class="autobus text">I'm info!</p>
+<input type="hidden" id="msloginlink" value="https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=2b2b6b35-33e2-4666-82b4-5937c583c3f0&response_type=code&redirect_uri=http://localhost:3000/auth/redirect&scope=XboxLive.signin%20offline_access&prompt=select_account">
+</div>
+<script src="./index.js"></script>
+</div>
+</body>
+</html>

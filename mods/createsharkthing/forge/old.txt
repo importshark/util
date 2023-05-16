@@ -1,0 +1,51 @@
+build wb and error confirm acc scenes https://crafatar.com/avatars/11178be5-ebed-45df-a473-d770fd085c6d?size=200&overlay=true
+set icon
+make check token-(ready event) return saved account if there is one
+auth send event
+init fail different error event 1
+redo icon just shark black bg?
+be able to forget auth
+x icon needs bg removed
+file icon needs bg removed
+
+
+old data
+import * as gmll from "gmll"
+import {Client} from "minecraft-launcher-core"
+gmll.config.setRoot(".MC")
+
+
+gmll.init().then(() => {
+    console.log("Initialized")
+
+new gmll.Instance({version: "1.19.2"}).install().then(() => {
+    console.log("Launching")
+    new Client().launch({
+        authorization: new Promise((r) => {
+            r({
+                access_token: "test",
+                client_token: "",
+                name: "ASharkInTheVoid",
+                uuid: "",
+                user_properties: {}
+            })
+        }),
+        overrides: {
+            detached: false
+        },
+        javaPath: "C:\\Program Files\\Zulu\\zulu-17\\bin\\java.exe",
+        root: ".MC",
+        version: {
+            number: "1.19.2",
+            type: "release"
+        },
+        memory: {
+            max: "2G",
+            min: "512M"
+        },
+    }).then((a) => {
+        a?.stdout.pipe(process.stdout)
+        a?.stderr.pipe(process.stderr)
+    }).catch(console.error)
+}).catch(console.error)
+}).catch(console.error)

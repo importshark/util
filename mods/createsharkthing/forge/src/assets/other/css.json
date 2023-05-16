@@ -1,0 +1,278 @@
+{
+  "time": 2,
+  "interval": 2,
+  "rules": {
+    "child": [
+      {
+        "property": "height",
+        "value": "45%"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "margin",
+        "value": "auto"
+      },
+      {
+        "property": "top",
+        "value": "0"
+      },
+      {
+        "property": "left",
+        "value": "0"
+      },
+      {
+        "property": "right",
+        "value": "0"
+      },
+      {
+        "property": "bottom",
+        "value": "0"
+      }
+    ],
+    "center": [
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "top",
+        "value": "75%"
+      },
+      {
+        "property": "left",
+        "value": "50%"
+      }
+    ],
+    "exit": [
+      {
+        "property": "height",
+        "value": "50px"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "top",
+        "value": "30px"
+      },
+      {
+        "property": "right",
+        "value": "30px"
+      }
+    ],
+    "hide": [
+      {
+        "property": "height",
+        "value": "50px"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "top",
+        "value": "20px"
+      },
+      {
+        "property": "left",
+        "value": "20px"
+      }
+    ],
+    "round": [
+      {
+        "property": "border-radius",
+        "value": "50px"
+      }
+    ],
+    "taskText": [
+      {
+        "property": "size",
+        "value": "0px 0px"
+      },
+      {
+        "property": "position",
+        "value": "relative"
+      },
+      {
+        "property": "top",
+        "value": "50%"
+      }
+    ],
+    "cover": [
+      {
+        "property": "width",
+        "value": "100vw"
+      },
+      {
+        "property": "height",
+        "value": "100vh"
+      },
+      {
+        "property": "opacity",
+        "value": "1"
+      },
+      {
+        "property": "background-color",
+        "value": "black"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      }
+    ],
+    "nonexistent": [
+      {
+        "property": "opacity",
+        "value": "0"
+      }
+    ],
+    "infodiv": [
+      {
+        "property": "width",
+        "value": "80%"
+      },
+      {
+        "property": "top",
+        "value": "60%"
+      },
+      {
+        "property": "left",
+        "value": "50%"
+      },
+      {
+        "property": "transform",
+        "value": "translate(-50%, -50%)"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "height",
+        "value": "40%"
+      }
+    ],
+    "taskButton": [
+      {
+        "property": "background-color",
+        "value": "rgba(59, 59, 59, 0.973)"
+      }
+    ],
+    "helpericon": [
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "top",
+        "value": "20%"
+      },
+      {
+        "property": "left",
+        "value": "5%"
+      },
+      {
+        "property": "height",
+        "value": "15%"
+      }
+    ],
+    "html": [
+      {
+        "property": "background-color",
+        "value": "rgb(13, 13, 13)"
+      },
+      {
+        "property": "margin",
+        "value": "0"
+      },
+      {
+        "property": "height",
+        "value": "100vh"
+      },
+      {
+        "property": "width",
+        "value": "100vw"
+      }
+    ],
+    "body": [
+      {
+        "property": "background-color",
+        "value": "rgb(13, 13, 13)"
+      },
+      {
+        "property": "margin",
+        "value": "0"
+      },
+      {
+        "property": "height",
+        "value": "100vh"
+      },
+      {
+        "property": "width",
+        "value": "100vw"
+      }
+    ],
+    "errorholder": [
+      {
+        "property": "height",
+        "value": "20%"
+      },
+      {
+        "property": "top",
+        "value": "20%"
+      },
+      {
+        "property": "width",
+        "value": "100vw"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      }
+    ],
+    "actiondiv": [
+      {
+        "property": "top",
+        "value": "80%"
+      },
+      {
+        "property": "width",
+        "value": "100vw"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      }
+    ],
+    "error": [
+      {
+        "property": "height",
+        "value": "25vh"
+      },
+      {
+        "property": "position",
+        "value": "absolute"
+      },
+      {
+        "property": "margin",
+        "value": "auto"
+      },
+      {
+        "property": "top",
+        "value": "10%"
+      },
+      {
+        "property": "left",
+        "value": "0"
+      },
+      {
+        "property": "right",
+        "value": "0"
+      }
+    ]
+  }
+}

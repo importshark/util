@@ -1,36 +1,61 @@
 {
   "type": "commonjs",
   "name": "idk",
-  "main": "dist/keepontrying.js",
+  "main": "./dist/src/index.js",
+  "version": "0.0.1",
   "dependencies": {
-    "@azure/msal-node": "^1.15.0",
-    "@xmcl/core": "^2.10.1",
-    "@xmcl/user": "^2.1.8",
     "adm-zip": "^0.5.10",
-    "electron": "^23.1.2",
-    "esm": "^3.2.25",
+    "assert": "^2.0.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "deasync": "^0.1.28",
+    "electron-rebuild": "^3.2.9",
+    "electron-squirrel-startup": "^1.0.0",
     "express": "^4.18.2",
+    "fileger": "^1.1.0",
+    "gmll": "^3.0.4",
     "minecraft-launcher-core": "^3.16.18",
-    "minecraft-launcher-lib": "^0.4.0",
     "msmc": "^3.1.4",
+    "net-ping": "^1.2.3",
     "node-notifier": "^10.0.1",
-    "request": "^2.88.2",
-    "typescript": "^4.9.5"
+    "node-sass": "^8.0.0",
+    "normalize.css": "^8.0.1",
+    "pug": "^3.0.2",
+    "raw-socket": "^1.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "regedit": "^5.1.2",
+    "sass-loader": "^13.2.2",
+    "timer-node": "^5.0.7",
+    "typescript": "^4.9.5",
+    "webpack-dev-server": "^4.13.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
     "@types/adm-zip": "^0.5.0",
-    "@types/esm": "^3.2.0",
+    "@types/deasync": "^0.1.2",
     "@types/express": "^4.17.17",
     "@types/node-fetch": "^2.6.2",
-    "@types/request": "^2.48.8"
+    "@types/pug": "^2.0.6",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "electron": "23.2.1",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
   },
-  "bin": "./dist/index.js",
-  "pkg": {
-    "scripts": "dist/*.js",
-    "assets": [
-      "assets/*",
-      "cache/*"
-    ],
-    "outputPath": "bin"
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "test": "npm run build && electron .",
+    "build": "tsc"
   }
 }

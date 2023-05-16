@@ -1,0 +1,21 @@
+{
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2023-03-08 13:53:02 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga": "2023-03-08 13:53:32 -0500",
+      "minecraft:frozen_river": "2023-03-08 13:53:40 -0500",
+      "minecraft:snowy_plains": "2023-03-08 13:53:44 -0500",
+      "minecraft:dripstone_caves": "2023-03-08 13:53:51 -0500",
+      "minecraft:snowy_taiga": "2023-03-08 13:52:49 -0500",
+      "minecraft:grove": "2023-03-08 13:52:46 -0500",
+      "minecraft:forest": "2023-03-07 20:46:48 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 3120
+}

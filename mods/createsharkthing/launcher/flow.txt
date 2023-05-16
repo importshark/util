@@ -1,0 +1,25 @@
+user init app
+check acc exists?
+yes: goto 8
+no: continue to 5
+auth screen auth is yes
+yes? auth.... goto 8
+no? typetime
+postauth.. resolve auth
+prep mc
+mc prepped Launch?
+no: goto 10
+yes? launch mc
+
+mc close 
+show window from user init app
+
+wifi stop
+wifi access?
+no: goto 18
+yes? go from user init app
+
+error?
+error critical
+yes: display and log
+no: offer option to retry

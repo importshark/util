@@ -1,0 +1,393 @@
+
+
+.pulsate-fwd{-webkit-animation:pulsate-fwd 2s ease-in-out infinite both;animation:pulsate-fwd 2s ease-in-out infinite both}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal infinite 0.9s both;
+	        animation: jello-horizontal infinite 0.9s both;
+}
+
+.notification {
+	-webkit-animation: notification 1s both;
+	        animation: notification 1s both;
+}
+
+
+.taskbar-open{
+  -webkit-animation: taskbar-open 0.9s forwards;
+  animation: taskbar-open 0.9s forwards;
+}
+
+.taskbar-scale-open{
+  -webkit-animation: taskbar-scale-open 0.9s forwards;
+  animation: taskbar-scale-open 0.9s forwards;
+}
+
+
+
+.taskbar-close{
+  -webkit-animation: taskbar-close 0.9s forwards;
+  animation: taskbar-close 0.9s forwards;
+}
+
+.taskbar-scale-close{
+  -webkit-animation: taskbar-scale-close 0.9s forwards;
+  animation: taskbar-scale-close 0.9s forwards;
+}
+
+.scale-out-center{-webkit-animation:scale-out-center .5s cubic-bezier(.55,.085,.68,.53) both;animation:scale-out-center .5s cubic-bezier(.55,.085,.68,.53) both}
+.scale-in-center{-webkit-animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both}
+
+
+.transition{-webkit-animation:transition .5s cubic-bezier(.55,.085,.68,.53) both;animation:transition .5s cubic-bezier(.55,.085,.68,.53) both}
+
+
+
+.child {
+  z-index: 2;
+    height: 45%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+  .center {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    margin-top: 50;
+    margin-left: -154px; 
+    margin-right: -130px;
+    margin-bottom: -300px;
+
+
+
+  }
+.exit{
+  height: 50px;
+  position: absolute;
+        top: 30px;
+        right: 30px;
+}
+
+.hide{
+  height: 50px;
+  position: absolute;
+        top: 20px;
+        left: 20px;
+}
+
+
+
+.round{
+  border-radius: 50px;
+}
+
+#taskText{
+  size: 0px 0px;
+  position: relative;
+  top: 50%;
+}
+
+.cover{
+  z-index: 5;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  background-color: black;
+  position: absolute;
+  display: block;
+}
+.nonexistent{
+  opacity: 0;
+  pointer-events: none;
+  outline: none;
+}
+
+.errorbutton{
+  background: #00008b;
+}
+
+.info{
+  font-size: 2em;
+}
+
+.infodiv{
+  /*background-color: #ffffff;*/
+  width: 80%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 40%;
+}
+
+.taskButton{
+  
+  background-color: rgba(59, 59, 59, 0.973)
+}
+/*
+.helpericondiv{
+  
+  background-color: blue;
+}
+*/
+.helpericon{
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  height: 15%;
+}
+
+html, body {
+ 
+  
+    background-color: rgb(13, 13, 13);  
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+}
+
+.errorholder{
+  height: 20%;
+  top: 20%;
+  width: 100vw;
+  position: absolute;
+  align-items: center;
+}
+
+.size-large{
+  font-size: 4em;
+}
+
+.size-standard{
+  font-size: 3em;
+}
+.size-small{
+  font-size:2em;
+}
+.size-x-small{
+  font-size:medium;
+}
+
+.autobus{
+  font-family: autobus;
+}
+/*
+#statustext{
+  top: 80%;
+}
+*/
+
+
+#actiondiv{
+  top: 80%;
+  width: 100vw;
+  position: absolute;
+}
+
+.error{
+  height: 25vh;
+  position: absolute;
+  margin: auto;
+  top: 10%;
+  left: 0;
+  right: 0;
+}
+
+.text{
+  -webkit-text-fill-color: #ffffff;
+  text-align: center;
+  align-items: center;
+
+
+}
+
+@keyframes transition{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+
+}
+50%{
+  opacity: 1;
+}
+99%{
+  transform: scale(1);
+}
+100%{
+  transform: scale(0);
+  opacity: 0;
+
+}
+}
+
+@-webkit-keyframes transition{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+
+}
+50%{
+  opacity: 1;
+}
+99%{
+  transform: scale(1);
+}
+100%{
+  transform: scale(0);
+  opacity: 0;
+
+}
+}
+
+
+@-webkit-keyframes notification{
+  0%{
+      -webkit-transform:scale(1);
+      transform:translateY(10);
+      opacity:1
+  }
+  100%{
+      -webkit-transform:scale(0);
+      transform:translateY(100);
+      opacity:1
+  }
+}
+
+
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+@keyframes notification{
+  0%{
+      transform:translateY(500px);
+
+      opacity:1
+  }
+  80%{
+    transform:translateY(420px);
+
+      opacity:1
+  }
+  100%{
+    transform:translateY(400px);
+
+    opacity:0
+  }
+}
+
+
+
+@keyframes taskbar-open {
+  0%{
+    transform: translateY(200px);
+
+}
+100%{
+  transform: translateY(400px);
+
+}
+}
+
+@keyframes taskbar-scale-open{
+  0%{
+    transform: translateY(400px);
+    transform:scaleY(1);
+
+}
+100%{
+  transform: translateY(400px);
+  transform:scaleY(20);
+
+}
+}
+
+@-webkit-keyframes taskbar-scale-open{
+  0%{
+    transform: translateY(400px);
+    
+
+
+}1%{
+  transform:scaleY(1);
+}99%{
+  transform:scaleY(20);
+}
+100%{
+  transform: translateY(400px);
+  
+
+}
+}
+@-webkit-keyframes taskbar-open{
+  0%{
+    transform: translateY(200px);
+
+
+}
+100%{
+  transform: translateY(400px);
+
+}
+}
+
+@keyframes taskbar-close {
+  0%{
+    transform: translateY(400px);
+
+}
+100%{
+  transform: translateY(200px);
+
+}
+}
+
+@keyframes taskbar-scale-close{
+  0%{
+    transform:scaleY(20);
+
+}
+100%{
+  transform:scaleY(1);
+
+}
+}
+
+@-webkit-keyframes taskbar-scale-close{
+  0%{
+    transform:scaleY(20);
+
+}
+100%{
+  transform:scaleY(1);
+
+}
+}
+@-webkit-keyframes taskbar-close{
+  0%{
+    transform: translateY(400px);
+
+
+}
+100%{
+  transform: translateY(200px);
+
+}
+}
+
+@-webkit-keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}@keyframes scale-out-center{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(0);transform:scale(0);opacity:1}}
+@-webkit-keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes pulsate-fwd{0%{-webkit-transform:scale(1);transform:scale(1)}50%{-webkit-transform:scale(1.1);transform:scale(1.1)}100%{-webkit-transform:scale(1);transform:scale(1)}}
+
+@font-face {
+  font-family: 'autobus';
+  font-weight: 300;
+  src: url("../font/autobus.ttf");
+}
+
