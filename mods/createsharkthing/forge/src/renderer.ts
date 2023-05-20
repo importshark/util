@@ -1,18 +1,8 @@
-import authicon from "./assets/images/auth.png"
-import backicon from "./assets/images/back.png"
-import checkicon from "./assets/images/check.png"
-import erroricon from "./assets/images/error.png"
-import logoicon from "./assets/images/logo.png"
-import hideicon from "./assets/images/hide.png"
-import exiticon from "./assets/images/exit.png"
-import wifiicon from "./assets/images/wifi.png"
-import question from "./assets/images/question.png"
-import xicon from "./assets/images/x.png"
-import fileicon from "./assets/images/file.png"
-import loadergif from "./assets/images/loading.gif"
-import infinitygif from "./assets/images/infinityloader.gif"
+import {images} from "./types/renderer"
 
 import statejson from "./assets/other/css.json"
+
+
 
 interface Declaration
     {
@@ -497,37 +487,37 @@ function getIcon(ico: icon): string {
 
     switch (ico) {
         case icon.authicon:
-            returnicon = authicon;
+            returnicon = images.authicon;
             break;
         case icon.backicon:
-            returnicon = backicon;
+            returnicon = images.backicon;
             break;
         case icon.checkicon:
-            returnicon = checkicon;
+            returnicon = images.checkicon;
             break;
         case icon.erroricon:
-            returnicon = erroricon;
+            returnicon = images.erroricon;
             break;
         case icon.logoicon:
-            returnicon = logoicon;
+            returnicon = images.logoicon;
             break;
         case icon.wifiicon:
-            returnicon = wifiicon;
+            returnicon = images.wifiicon;
             break;
         case icon.fileicon:
-            returnicon = fileicon;
+            returnicon = images.fileicon;
             break;
         case icon.question:
-            returnicon = question;
+            returnicon = images.question;
             break;
         case icon.xicon:
-            returnicon = xicon;
+            returnicon = images.xicon;
             break;
         case icon.loader:
-            returnicon = loadergif;
+            returnicon = images.loadergif;
             break;
         case icon.inifinity:
-            returnicon = infinitygif;
+            returnicon = images.infinitygif;
             break;
     }
     return returnicon;
@@ -634,7 +624,8 @@ function newUpdateStatus(newstate: string){
 }
 
 function _updateStatus(newstate: string, customdata ? : partialstate) {
-
+    // eslint-disable-next-line no-debugger
+    debugger
     console.log(`[UPDI PAIN] Updating state to ${newstate}`)
 
     const oldtype = states[state].div.type;
@@ -688,8 +679,8 @@ function _updateStatus(newstate: string, customdata ? : partialstate) {
 
     const bgbutton = < HTMLImageElement > document.getElementById("backgroundButton")
     const exitbutton = < HTMLImageElement > document.getElementById("exitButton")
-    if (bgbutton) bgbutton.src = hideicon
-    if (exitbutton) exitbutton.src = exiticon
+    if (bgbutton) bgbutton.src = images.hideicon
+    if (exitbutton) exitbutton.src = images.exiticon
 
     //actiondiv
     //remove all classes

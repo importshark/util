@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import path, { resolve } from 'path';
 import type {
     ModuleOptions
 } from 'webpack';
@@ -35,7 +35,7 @@ export const rules: Required < ModuleOptions > ['rules'] = [
     },
     {
         test: /\.(png|jpe?g|gif|svg|ico)(\?.*)?$/,
-        use: {
+        use: [{
             loader: 'url-loader',
             options: {
                 limit: 20 * 1024, // 20Kb
@@ -44,7 +44,10 @@ export const rules: Required < ModuleOptions > ['rules'] = [
                 name: '[name].[ext]',
                 esModule: false
             }
-        }
+        }, 
+    {
+        loader: require.resolve("D:\\Projects\\Misc\\util\\mods\\createsharkthing\\forge\\imageloader.js")
+    }]
     },
     {
         test: /\.jar$/,

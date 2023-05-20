@@ -3,7 +3,8 @@ import {
     ProvidePlugin
 } from 'webpack';
 
-import polyp from "./plugin"
+import cssplugin from "./cssplugin"
+
 
 import {
     rules
@@ -22,11 +23,12 @@ export const mainConfig: Configuration = {
     module: {
         rules,
     },
-    plugins: [new polyp({
+    plugins: [new cssplugin({
         css: "src\\assets\\css\\index.css",
         jsonemit: "src\\assets\\other\\css.json",
         timetochange: 2
-    })],
+    })
+],
     resolve: {
         extensions: ['.js', '.ts', '.jsx', '.tsx', '.css', '.json']
     }

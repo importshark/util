@@ -19,3 +19,5 @@ updates on download progresss
 check the auth is valid
 memory get fail retry doesnt work
 do we want one long running thread?
+merge auth handle to function
+new flow -> load app -> as init/check memory  check microsoft oauth prompt none

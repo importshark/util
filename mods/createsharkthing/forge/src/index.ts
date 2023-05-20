@@ -265,7 +265,7 @@ function authWindow(parent: BrowserWindow, show: boolean) {
         resizable: false,
         movable: false,
         parent,
-        show: false
+        show: true
     })
 
 
@@ -399,6 +399,7 @@ function authWindow(parent: BrowserWindow, show: boolean) {
 
     authWin.loadURL(getLink()).catch(y => {
         logger.info("authfail sent")
+        logger.debug(y)
         authwinfail = y;
         if (authWin.isDestroyed()) {
             return window.webContents.send("auth-close", {
@@ -419,7 +420,7 @@ function appStart() {
     const mainWindow = new BrowserWindow({
         width: screen.getPrimaryDisplay().bounds.width * widthratio,
         height: screen.getPrimaryDisplay().bounds.height * heightratio,
-        frame: true,
+        frame: false,
         alwaysOnTop: false,
         closable: true,
         center: true,

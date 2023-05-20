@@ -1293,6 +1293,61 @@ const states: statesobject = {
             "id": "imgholder"
         },
         "actions": []
+    },
+    "extra": {
+        "div": {
+            "type": "p",
+            "inttype": "p",
+            "class": [
+                "round"
+            ]
+        },
+        "child": {
+            "div": true,
+            "class": [
+                "autobus",
+                "text",
+                "size-large"
+            ],
+            "id": "statustext",
+            "innerHtml": "Shark Enterprise"
+        },
+        "offhandicon": {
+            "id": "helpericon",
+            "div": false,
+            "class": [
+                "nonexistent"
+            ],
+            "src": icon.xicon,
+            "alt": "Back icon"
+        },
+        "info": {
+            "div": true,
+            "class": [
+                "autobus",
+                "text",
+                "size-small"
+            ],
+            "id": "infotext",
+            "innerHtml": "To turn off the computer use ALT + TAB and hit enter on the window that results"
+        },
+        "image": {
+            "div": false,
+            "class": [
+                "error",
+                "pulsate-fwd"
+            ],
+            "src": icon.logoicon,
+            "alt": "Auth Image",
+            "id": "hide"
+        },
+        "imagediv": {
+            "class": [
+                "errorholder"
+            ],
+            "id": "imgholder"
+        },
+        "actions": []
     }
 
 }

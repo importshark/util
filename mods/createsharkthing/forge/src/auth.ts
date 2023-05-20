@@ -543,7 +543,7 @@ export async function fastAuth(code: string, update: (event: AuthEvent) => void)
 }
 
 export function getLink() {
-    return `https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=2b2b6b35-33e2-4666-82b4-5937c583c3f0&response_type=code&redirect_uri=http://localhost:27356/auth/redirect&scope=XboxLive.signin%20offline_access&prompt=select_account `
+    return `https://login.microsoftonline.com/consumers/oauth2/v2.0/authorize?client_id=2b2b6b35-33e2-4666-82b4-5937c583c3f0&response_type=code&redirect_uri=http://localhost:27356/auth/redirect&scope=XboxLive.signin%20offline_access&prompt=select_account`
 }
 
 
